@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <title>HTML Primer</title>
+</head>
+<body>
+    <h1>HTML Primer</h1>
+    <p>In this module we will learn about HTML from the very basics and cover all the concepts and its implementations.</p>
+    <div>
+    <h2>HTML Introduction</h2>
+    <p>HTML stands for Hyper Text Markup Language and is used to specify what the content of a particular webpage will be and the structure in which the content will be arranged. </p>
+    <p>Let's think about it, on a typical webpage we have following type of contents:</p>
+    <ul>
+        <li>Headings: a content would have main headings, followed by various subheadings</li>
+        <li>Paragraphs: there also needs be a blob of running text or paragraph, for which headings are specified.</li>
+        <li>Links:there are texts (as well as images, buttons) on the webpage which when clicked leads to either new websites, different pages on the same website or to a different section on the same webpage.</li>
+        <li>Tables and Lists: the information can be arranged in the tables, or there may be need to arrange the data in ordered and unordered lists. </li>
+        <li>Inputs Elements / Selection Elements:many a times we need to enter the information on webpages or select 
+            from the pre-configured options on a webpage. For e.g.:
+            <ul>
+                <li>Email Address, First Name, Last Name, Cell No. etc. to be provided as an input on a Form</li>
+                <li>Date and Time Selections</li>
+                <li>File Selection for File Uploads</li>
+                <li>Radio Buttons to select one option, or checkbox to select multiple options. /li>
+            </ul> 
+        </li>
+        <li>Multimedia Elements: we are all used to access videos, images, GIFs, SVGs on modern webapps, so HTML must have provision for these contents as well.</li>
+    </ul>
+    <p>Not only the contents, but Web Pages also has various structural elements in it for e.g.:</p>
+    <ul>
+        <li>Headers and Footers</li>
+        <li>Navigation Menu</li>
+        <li>Left-Hand or Right-Hand Content Panels for some specific piece of contents like Advertisements, Promotions, Banners, Promoted Blogs etc.</li>
+        <li>Code Snippets, Pre-formatted Contents</li>
+        <li>Distinct Sections on a Webpage for e.g. Hero Section, Contact Us Section, Project Highlights, Testimonials etc.</li>
+        <li>Different paragraph groupings for various text blurbs </li>
+    </ul>
+    <p>HTML supports all the different types of contents as highlighted above. Additionally, it has features to structure, arrange or group the contents into various semantic contexts.</p>
+    <code>So just to summarize, HTML specify the content and structure of a webpage</code>
+    <p>Its also prudent to make a distinction that HTML itself is not a programming language per say, as it doesn’t contain any logic. HTML contains markups, which can be considered as encoding or symbols which give certain meaning to the text enclosed within them for e.g., &lt;p&gt; and &lt;H1&gt;. These are also referred to as tags.</p>
+    <p>If you are interested, there is a detailed explanation on why its refered to as <em>hypertext</em> and <em>markup</em>, and the history of evolution of HTML covered by MDN Web Docs at the following location:</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML">MDN Blog</a>
+    <p>With this now out of the way, this is the right time to understand the Anatomy of HTML</p>
+    </div>
+    <div>
+    <h2>Introduction to HTML Anatomy</h2>
+    <p>From the development perspective let's align on some terminologies. We will use the term <b>HTML Document</b> to refer to a webpage. So the single wepbage which is displayed in a browser corresponds to the HTML document which is created by a developer and it may be a static webpage or a dynamic webpage (more on that later). </p>
+    <p>A webpage or HTML document consists of series of “HTML Elements” which we use to markup different parts of the content to make it appear or act in a certain way. This markup is usually done by enclosing the content is some predefined tags. For e.g. the code below will result into the following output</p>
+    <code>&lt;p&gt; This is a paragraph content &lt;\p&gt;</code>
+    <code><p>This is a paragraph content</p></code>
+    </div>
+    <p>The following image highlights the different parts of the HTML element which we just used in the example above:</p>
+    <img src="../../images/HTML Element Illustration.png" alt="HTML Element Explanation">
+    <p>As we can see there are various parts associated with a HTML elements, and they are:
+         <ul>
+            <li><b>Opening Tag:</b> The start of the HTML element we specific the opening tag. It takes for the form of <b>&lt; TagName &gt;</b></li>
+            <li><b>Closing Tag:</b> In most of the cases (yes there are few exception where we don't need closing tag) closing tag is also included and it takes the form of <b>&lt; /TagName &gt;</b></li>
+            <li><b>Content</b>: And enclosed within the tags is the actual content (or text) that will be displayed on the webpage</li>
+        </ul>
+        All these parts together are referred to as an <b>HTML Element</b>
+    </p>
+    <p>Now there is much more to HTML Anatomy, we need to discuss concepts and tags like Head, DocType, Link, Meta, Style, Body, Tag attributes and so and so forth. Instead of enundating you with all the constructs, we will understand these concepts as and when we encounter them as we progress on this journey of HTML together</p>
+    <p>In next few sections we will now cover and understand various HTML tags which are available for us to use.</p>
+    <div>
+</body>
+</html>
