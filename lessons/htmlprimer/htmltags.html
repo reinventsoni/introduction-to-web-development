@@ -3,9 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HTML Primer - HTML Tags</title>
+    <link rel="stylesheet" href="../../styles/styles.css">
 </head>
 <body>
+    <h1>HTML Tags</h1>
+    <p>Now that we have a basic understanding of the anatomy of the HTML document and the underlying elements, lets
+        formally go through all the tags which HTML has to offer.
+    </p>
+
+    <div>
+        <h2>1. HTML Headings</h2>
+        <p>As we briefly touched in the introduction section that we need to cater for Headings and Paragraphs to structure text properly. HTML has multiple tags to cater for this.
+            For Headings there are six level of heading tags which HTML provides, and they are as follows:
+            <ul>
+                <li>&lt;H1&gt; This is Heading Level 1  &lt;/H1&gt;</li>
+                <li>&lt;H2&gt; This is Heading Level 2  &lt;/H2&gt;</li>
+                <li>&lt;H3&gt; This is Heading Level 3  &lt;/H3&gt;</li>
+                <li>&lt;H4&gt; This is Heading Level 4  &lt;/H4&gt;</li>
+                <li>&lt;H5&gt; This is Heading Level 5  &lt;/H5&gt;</li>
+                <li>&lt;H6&gt; This is Heading Level 6  &lt;/H6&gt;</li>
+            </ul>
+        and this generates the following output, the fonts and size may be little different depending on the browser default style and or the 
+        custom styling applied to the webpage.
+        </p>
+        <H1> This is Heading Level 1 </H1>
+        <H2> This is Heading Level 2 </H2>
+        <H3> This is Heading Level 2 </H3>
+        <H4> This is Heading Level 2 </H4>
+        <H5> This is Heading Level 2 </H5>
+        <H6> This is Heading Level 2 </H6>
+        <p>H1 heading should be used for the main heading, H2 represent the sub-heading, H3 represent the next level of sub-heading 
+        (you can call it sub-sub-heading) and so and so forth. Just one word of caution we should not over do. I don’t see any reasons 
+        where we may need to go to all the way to H6s, but there is a provision for it from the 
+        markup language constructs point of view.</p>
+    </div>
+    <div>
+        <h2>2. HTML Paragraphs</h2>
+        <p>Besides headings we also need running text or paragraphs, and for that we have <strong>&lt;p&gt;</strong> tag in HTML.  So following code segment:
+            will result into following output on a HTML webpage:
+        </p>
+            <code>
+                &lt;p&gt;
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quod, modi accusantium cumque ducimus consequuntur 
+            voluptatum optio repellendus, nemo et at, accusamus labore soluta! Quibusdam natus sunt hic consectetur placeat? Iusto 
+            fugit corporis incidunt distinctio temporibus ratione. Unde totam molestiae, repellat, repellendus modi iste inventore 
+            consectetur tempore neque nam sapiente? Commodi doloribus aperiam et repellat omnis provident molestias odit ipsam?
+                &lt;/p&gt;
+            </code>
+        <p>Output:</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis quod, modi accusantium cumque ducimus consequuntur 
+            voluptatum optio repellendus, nemo et at, accusamus labore soluta! Quibusdam natus sunt hic consectetur placeat? Iusto 
+            fugit corporis incidunt distinctio temporibus ratione. Unde totam molestiae, repellat, repellendus modi iste inventore 
+            consectetur tempore neque nam sapiente? Commodi doloribus aperiam et repellat omnis provident molestias odit ipsam?</p>
+
+        <p><strong>Structure Hierarchy: </strong>It is important to maintain the structure hierarchy when we are laying down the text content
+        on our webpages. If we think about following are the different areas of users and applications that will access our webpage, and we
+        as developers need to make sure that content is structured in such a way that for all the below use cases it can be easily and intuitively
+        accessed:
+        <ul>
+            <li><strong>Search Engine</strong>: the crawlers of search engines when index our webpages, need to understand the content on it and in doing
+                so the headings plays important part in it amongst various other factors involved in Search Engine Optimization. Without headings
+                our webpage may not perform well in SEO and be found organically on the web.
+            </li>
+            <li><strong>CSS Javascript:</strong> we also need to structure our webpages properly so that we can use CSS to select the contents based on the 
+                class and variour other selection and apply appropriate styling. Proper structure of HTML pages is also required so that
+                we can access the content programatically and it requires proper tags, ids and classes etc to be in place for the elements to
+                be properly targeted.
+            </li>
+            <li><strong>Users: </strong>We, the end users, usually do a quick scan of any webpage before we decide to spend time on a page for a detailed read.
+                So it is important to have a proper structure of headings, contents, lists, quotes, etc in any document and HTML pages are 
+                no exception to it.
+            </li>
+            <li><strong>Accessibility: </strong> We should also not forget that wide variety of users who access websites may have some visual impairement, so 
+                our websites should also cater to it as they will use Screen Readers to read the content of website. In that regards it is important
+                that we use proper tags for e.g. &lt;emphasis&gt; and &lt;strong&gt; wherever require. Also a proper use of semantic tags is 
+                advisable. We have a section on Semantic Tags later in our course.
+            </li>
+        </ul>
     
+        </p>
+    </div>
+    <div>
+        <H2>3. HTML Lists</H2>
+        <p>We use lists extensively when we are dealing with the text content in our day to day life. Primarily speaking there are two types
+            of lists:
+            <ul>
+                <li>Ordered Lists: where the sequence in which the content is appearing is important</li>
+                <li>Unordered Lists: where the sequence itself is not important, but its better to represent the items in a list basis for clarity purposes.</li>
+            </ul>
+            HTML has specific tags for the types of lists.
+        </p>
+
+        <strong>Ordered List: </strong> is defined using the following tags:
+        
+        <p><code>
+            <img src="../../images/HTML Ordered List.png" alt="Ordered List">
+        </code>
+        </p>
+        and the above code generates a list like below:
+        <p><code>  
+            <img src="../../images/HTML Ordered List Output.png" alt="Ordered List output">
+        </code>
+        </p>
+        <p>The tag usage is self explanatory but to explain -> the outer tags (opening and closing tags) are defined by 
+            <strong>&lt;ol&gt;</strong> ... <strong>&lt;/ol&gt;</strong> respectively. ol: stands for Ordered List. Nested within these Tags
+            are the individual <strong>list items</strong> which are defined by the tags <strong>&lt;li&gt;</strong> ... <strong>&lt;/li&gt;</strong>,
+            where li: stands for list items
+        </p>
+
+        <p>Extending the same thought process if we have to use the <b>U</b>nordered <b>L</b>ist, then one would thing that we should use the Tags
+            <strong>&lt;ul&gt;</strong> ... <strong>&lt;/ul&gt;</strong>, and that is absolutely right.
+        </p>
+
+        <strong>Unordered List: </strong> is defined using the following tags:
+        
+        <p><code>
+            <img src="../../images/HTML Unordered List.png" alt="Ordered List">
+        </code>
+        </p>
+        and the above code generates a list like below:
+        <p><code>  
+            <img src="../../images/HTML Unordered List Output.png" alt="Ordered List output">
+        </code>
+        </p>
+        <p>By the way in this context, tags <strong>&lt;li&gt;</strong> ... <strong>&lt;/li&gt;</strong> are said to be nested elements or child of the 
+        tags <strong>&lt;ul&gt;</strong> ... <strong>&lt;/ul&gt;</strong> or <strong>&lt;ol&gt;</strong> ... <strong>&lt;/ol&gt;</strong> 
+        as the case may be.</p>
+    </div>
+    <div>
+        <h2>4. HTML Hyperlinks</h2>
+        <p>Hyperlinks refer to a web-content, like texts, images, buttons that can be linked to a section on the same webpage, or a different webpage on
+            the same website, or for that matter an entirely different website altogether. Basic Anatomy of a hyperlink tag is as follows:
+        </p>
+        <code><img src="../../images/HTML A Tag Anatomy.png" alt="Anatomy of Hyperlink Tag"></code>
+        <p>So as you can see it has: 
+        <ul>
+            <li>an opening &lt;a&gt; tag. Within this opening tag you also have an attribute <strong>href</strong>, where you specify the target of the link.</li>
+            <li>a closing &lt;/a&gt; tag</li>
+            <li>embededded within tag is a TEXT, which is what will be visible on the webpage</li>
+        </ul>
+        </p>
+    </div>
+    <div>
+        <h2>5. HTML Images</h2>
+    </div>
+    <div>
+        <h2>6. HTML Buttons</h2>
+    </div>
+    <div>
+        <h2>7. HTML Tables</h2>
+    </div>
 </body>
 </html>
