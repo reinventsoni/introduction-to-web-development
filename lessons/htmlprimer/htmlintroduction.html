@@ -46,7 +46,7 @@
     <p>With this now out of the way, this is the right time to understand the Anatomy of HTML</p>
     </div>
     <div>
-    <h2>Introduction to HTML Anatomy</h2>
+    <h2>Anatomy of HTML Elements</h2>
     <p>From the development perspective let's align on some terminologies. We will use the term <b>HTML Document</b> to refer to a webpage. So the single wepbage which is displayed in a browser corresponds to the HTML document which is created by a developer and it may be a static webpage or a dynamic webpage (more on that later). </p>
     <p>A webpage or HTML document consists of series of “HTML Elements” which we use to markup different parts of the content to make it appear or act in a certain way. This markup is usually done by enclosing the content is some predefined tags. For e.g. the code below will result into the following output</p>
     <code>&lt;p&gt; This is a paragraph content &lt;\p&gt;</code>
@@ -62,8 +62,41 @@
         </ul>
         All these parts together are referred to as an <b>HTML Element</b>
     </p>
-    <p>Now there is much more to HTML Anatomy, we need to discuss concepts and tags like Head, DocType, Link, Meta, Style, Body, Tag attributes and so and so forth. Instead of enundating you with all the constructs, we will understand these concepts as and when we encounter them as we progress on this journey of HTML together</p>
-    <p>In next few sections we will now cover and understand various HTML tags which are available for us to use.</p>
+    <p>Just for completeness, I would like to call out that we can additionally specify the attributes as <strong> key = value </strong> pair for various tags, but we will look at it in the respective sections when we deal with individual tags and later on when we use CSS to style our webpages.</p>
+    
+    <p>Now that we have understood what the anatomy of individual HTML elements look like, let's also understand the structure / anatomy of the webpage or HTML Document itself.</p>
     <div>
+        <h2>Anatomy of HTML Document</h2>
+        <p>Any HTML Document would have following structure: </p>
+        <ul>
+            <li><strong>DOCTYPE declaration:</strong> All the HTML Documents should start with the declaration <strong> &lt;!DOCTYPE html&gt;</strong>. This tells the browser that the document which it is going to render is a HTML document. 
+            This declaration also highlights what HTML version this document is, and as a result also highlights what are the allowed tags. </li>
+            <li><strong>HTML Element: </strong>After the doctype declaration this is the root element of HTML Webpage. Everything else is encapsulated within the HTML element.</li>
+            <li><strong>HEAD element:</strong>The header section of the HTML document which is declared using the element <strong>&lt;head&gt;....&lt;/head&gt;</strong> is used to 
+            define the metadata of the webpage i.e. data about the HTML page itself. Metadata typically defines the document title, character set, styles, scripts and various other meta information as needed.
+            As a minimum we should specify Title, Character Set and Viewport when defining the head element of a webpage. These are defined as follow:
+                <ul>
+                    <li><strong>&lt;title&gt;The Title of the Webpage&lt;/title&gt;:</strong> The title appears on the Browser Tab when the webpage is opened in the browser</li>
+                    <li><strong>&lt;meta charset="UTF-8" &gt;:</strong> This element tells the browser the character encoding which is used in the HTML document. Most of the time UTF-8 is sufficient, but there may be instances 
+                    when other character encoding may have to be used for e.g. when we are dealing with regional languages.</li> 
+                    <li><strong>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" &gt;:</strong></li>
+                    <p>Observe that for meta element we have additional specified the <strong>key="value"</strong> information, these are known as tag attributes.
+                    Different tags have different tag attributes associated with them. We will cover them in the subsequent section. Also observe that meta tag doesn't 
+                    have the closing tag associated with it. There are various tags which follow these patterns i.e. they do not have Child Content node underneath them.
+                    These correct technical term for these tags/elements is <strong>void elements</strong></p>
+                </ul> 
+            </li>
+            <li><strong>BODY element:</strong> The body element of the HTML document is the container which contains all the visible HTML elements like headings, paragraphs, links
+            tables, images. Everything which is visible when the browser opens up the webpages is specified in the body element of HTML using different HTML elements (Tags)</li>
+        </ul>
+        <p>So a typical HTML page will always having following skeleton structure: </p>
+        <img src="../../images/HTML Page Structure.png" alt="HTML Page Structure">
+        <p>Now its good to remember these tags, but practically speaking you don't need to. The IDEs which are used by developers have the shortcuts
+            to generate these boilerplate code. You can refer to the instructions for the respective IDE which you are using.
+            In this course we are using VSCODE, and we have covered this in the demonstration.
+            <code>embed video here later.</code>
+        </p>
+    </div>
+    <p>Next we will talk about the HTML tags which we will use within the body section of our webpages.</p>
 </body>
 </html>
